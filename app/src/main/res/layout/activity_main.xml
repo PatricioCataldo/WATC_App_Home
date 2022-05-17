@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/todo"
+        app:fab_addButtonColorNormal="#EA1818"
+
+        app:fab_expandDirection="down">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#ABA919"
+            app:fab_icon="@android:drawable/ic_dialog_info"
+            app:fab_size="normal">
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#1A1A8E"
+            app:fab_icon="@drawable/ic_logout"
+            app:fab_size="normal">
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

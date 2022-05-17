@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252323"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/g_nero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_genero" />
+
+    <TextView
+        android:id="@+id/otro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="237dp"
+        android:text="@string/otro"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/racismo"
+        app:layout_constraintTop_toBottomOf="@+id/button_otro" />
+
+    <TextView
+        android:id="@+id/racismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="237dp"
+        android:text="@string/racismo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_racismo" />
+
+    <Button
+        android:id="@+id/button_genero"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="468dp"
+        android:backgroundTint="#FFFFFF"
+        app:iconSize="75dp"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_genero"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_racismo"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="268dp"
+        android:backgroundTint="#FFFFFF"
+
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_racismo"
+        app:iconSize="75dp"
+        app:iconTint="#010101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pelea"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_pelea"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_pelea"
+        app:iconTint="#060606"
+        app:iconSize="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/pelea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#EA1818"
+        android:text="@string/Cancelar"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_otro" />
+
+    <Button
+        android:id="@+id/button_otro"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="268dp"
+        android:backgroundTint="#FFFFFF"
+
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_otro"
+        app:iconSize="75dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genero"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/pelea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="182dp"
+        android:text="@string/pelea"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/genero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_pelea" />
+</androidx.constraintlayout.widget.ConstraintLayout>
